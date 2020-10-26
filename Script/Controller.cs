@@ -19,8 +19,6 @@ public class Controller : MonoBehaviour
     void Update()
     {
         Controll();
-
-
     }
     void Controll()
     {
@@ -36,6 +34,7 @@ public class Controller : MonoBehaviour
     void KeyBoardControll()
     {
         float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
         Vector2 diraction = new Vector2(horizontal * speedMove * Time.deltaTime + transform.position.x, 0f);
 
